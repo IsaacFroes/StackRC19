@@ -1,0 +1,6 @@
+<workspace>
+	<batchBuild></batchBuild>
+	<project>
+		<path>$WS_DIR$\apps_prime_service_dual_dlms_met_flash.ewp</path>
+	</project>
+</workspace>

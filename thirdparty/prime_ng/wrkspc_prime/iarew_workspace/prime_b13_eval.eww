@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+	<project>
+		<path>$WS_DIR$\..\..\apps\prime_1_3_base_modem\samg55j19_xplained_pl460\iar\apps_prime_1_3_base_modem_flash.ewp</path>
+	</project>
+	<project>
+		<path>$WS_DIR$\..\..\apps\prime_1_4_base_modem\samg55j19_xplained_pl460\iar\apps_prime_1_4_base_modem_flash.ewp</path>
+	</project>
+	<batchBuild>
+		<batchDefinition>
+			<name>All</name>
+			<member>
+				<project>apps_prime_1_3_base_modem_flash</project>
+				<configuration>Debug</configuration>
+			</member>
+			<member>
+				<project>apps_prime_1_4_base_modem_flash</project>
+				<configuration>Debug</configuration>
+			</member>
+		</batchDefinition>
+	</batchBuild>
+</workspace>

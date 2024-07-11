@@ -1,0 +1,43 @@
+/*###ICF### Section handled by ICF editor, don't touch! ****/
+/*-Editor annotation file-*/
+/* IcfEditorFile="$TOOLKIT_DIR$\config\ide\IcfEditor\cortex_v1_0.xml" */
+/*-Specials-*/
+define symbol __intvec_start__     = 0x01010000;
+define symbol __dont_care__        = 0x00000000;
+/*-Prime Stack Reserved Memory Resources (136K + 128K + 256K + 96K ROM, 44K RAM)-*/
+define symbol __prime_RAM_size__   = 0x0000B000;
+define symbol __prime_ROM_size__   = 0x0009A000;
+define symbol __prime_RSV_size__   = 0x00010000;
+/*-Memory Regions-*/
+define symbol __region_RAM_start__ = 0x20000000;
+define symbol __region_RAM_end__   = 0x20080000;
+define symbol __region_ROM_start__ = 0x01010000;
+define symbol __region_ROM_end__   = 0x01200000;
+define symbol __bank_ROM_size__    = 0x00100000; /* This is to use only the first memory bank */
+/*-Application Memory Regions-*/
+define symbol __app_RAM_start__    = __region_RAM_start__;
+define symbol __app_RAM_end__      = __region_RAM_end__ - __prime_RAM_size__;
+define symbol __app_ROM_start__    = __region_ROM_start__;
+define symbol __app_ROM_end__      = __region_ROM_end__ - __prime_ROM_size__ - __prime_RSV_size__ - __bank_ROM_size__;
+/*-Sizes-*/
+if (!isdefinedsymbol(__ICFEDIT_size_cstack__)) {
+define symbol __size_cstack__      = 0x3000;
+}
+if (!isdefinedsymbol(__ICFEDIT_size_heap__)) {
+define symbol __size_heap__        = 0x1800;
+}
+/**** End of ICF editor section. ###ICF###*/
+
+define memory mem with size = 4G;
+define region RAM_region    = mem:[from __app_RAM_start__ to __app_RAM_end__];
+define region ROM_region    = mem:[from __app_ROM_start__ to __app_ROM_end__];
+
+define block CSTACK with alignment = 8, size = __size_cstack__ { };
+define block HEAP   with alignment = 8, size = __size_heap__   { };
+
+initialize by copy { readwrite };
+do not initialize  { section .noinit };
+
+place at address mem:__intvec_start__ { readonly section .intvec };
+place in ROM_region                   { readonly };
+place in RAM_region                   { readwrite, block CSTACK, block HEAP };

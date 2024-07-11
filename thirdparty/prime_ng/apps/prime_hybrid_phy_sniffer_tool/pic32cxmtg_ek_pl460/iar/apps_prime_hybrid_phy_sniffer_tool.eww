@@ -1,0 +1,6 @@
+<workspace>
+	<batchBuild></batchBuild>
+	<project>
+		<path>$WS_DIR$\apps_prime_hybrid_phy_sniffer_tool_flash.ewp</path>
+	</project>
+</workspace>
