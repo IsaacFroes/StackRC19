@@ -95,7 +95,7 @@ static void _show_node_state(void)
 	case MODEM_NODE_UNREGISTERED:
 #if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB)
 		c0216CiZ_show((const char *)"SN UNREGISTERED");
-#elif (BOARD == PIC32CXMTSH_DB)
+#elif (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 		cl010_show_numeric_string(CL010_LINE_UP, (const uint8_t *)"55000000");
 		cl010_show_icon(CL010_ICON_COL_2);
 		cl010_clear_icon(CL010_ICON_COMM_SIGNAL_LOW);
@@ -109,7 +109,7 @@ static void _show_node_state(void)
 	case MODEM_NODE_REGISTERED:
 #if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB)
 		c0216CiZ_show((const char *)"SN REGISTERED   ");
-#elif (BOARD == PIC32CXMTSH_DB)
+#elif (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 		cl010_show_numeric_string(CL010_LINE_UP, (const uint8_t *)"55000001");
 		cl010_show_icon(CL010_ICON_COL_2);
 		cl010_show_icon(CL010_ICON_COMM_SIGNAL_LOW);
@@ -123,7 +123,7 @@ static void _show_node_state(void)
 	case MODEM_NODE_SWITCH:
 #if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB)
 		c0216CiZ_show((const char *)"SN SWITCH       ");
-#elif (BOARD == PIC32CXMTSH_DB)
+#elif (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 		cl010_show_numeric_string(CL010_LINE_UP, (const uint8_t *)"55000005");
 		cl010_show_icon(CL010_ICON_COL_2);
 		cl010_show_icon(CL010_ICON_COMM_SIGNAL_LOW);
@@ -147,7 +147,7 @@ static void _show_node_state(void)
 static void _dataRx_activity(xTimerHandle pxTimer)
 {
 	UNUSED(pxTimer);
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 	cl010_show_icon(CL010_ICON_PHASE_3);
 #elif (BOARD != ATPL360AMB) && (BOARD != ATPL360MB)
 	c42364a_clear_icon(C42364A_ICON_AUDIO);
@@ -162,7 +162,7 @@ static void _dataRx_activity(xTimerHandle pxTimer)
 static void _dataTx_activity(xTimerHandle pxTimer)
 {
 	UNUSED(pxTimer);
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 	cl010_show_icon(CL010_ICON_PHASE_2);
 #elif (BOARD != ATPL360AMB) && (BOARD != ATPL360MB)
 	c42364a_clear_icon(C42364A_ICON_WLESS);
@@ -203,7 +203,7 @@ static void task_modem(void *pvParameters)
 #ifdef EXAMPLE_LCD_SIGNALLING_ENABLE
 #if (BOARD != ATPL360AMB) && (BOARD != ATPL360MB)
 		if (modem_txdata_ind()) {
-#if (BOARD != PIC32CXMTSH_DB)
+#if (BOARD != PIC32CXMTSH_DB) && (BOARD != PIC32CXMTC_DB)
 			c42364a_show_icon(C42364A_ICON_WLESS);
 #else
 			cl010_show_icon(CL010_ICON_PHASE_2);
@@ -212,7 +212,7 @@ static void task_modem(void *pvParameters)
 		}
 
 		if (modem_rxdata_ind()) {
-#if (BOARD != PIC32CXMTSH_DB)
+#if (BOARD != PIC32CXMTSH_DB) && (BOARD != PIC32CXMTC_DB)
 			c42364a_show_icon(C42364A_ICON_AUDIO);
 #else
 			cl010_show_icon(CL010_ICON_PHASE_3);

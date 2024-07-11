@@ -97,7 +97,7 @@ extern uint32_t prime_api;
 
 #define PRIME_VENDOR                              (*((uint16_t *)((prime_api) + (0x00))))
 #define PRIME_MODEL                               (*((uint16_t *)((prime_api) + (0x02))))
-#define PRIME_VERSION                             (*((char *)((prime_api) + (0x04))))
+#define PRIME_VERSION                             PRIME_1_4//(*((char *)((prime_api) + (0x04))))
 /* @} */
 /** \brief PRIME control functions interface (index, type) duplets */
 /* @{ */

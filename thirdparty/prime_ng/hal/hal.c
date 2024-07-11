@@ -339,7 +339,7 @@ void hal_debug_report(uint32_t ul_err_type)
 #if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB)
 			c0216CiZ_set_cursor(C0216CiZ_LINE_UP, 0);
 			c0216CiZ_show((const char *)"CRITICAL ERROR");
-#elif (BOARD == PIC32CXMTSH_DB)
+#elif (BOARD == PIC32CXMTSH_DB) || (BOARD==PIC32CXMTC_DB)
 			cl010_show_icon(CL010_ICON_PHASE_1);
 			cl010_show_icon(CL010_ICON_PHASE_2);
 			cl010_show_icon(CL010_ICON_PHASE_3);

@@ -98,7 +98,7 @@ static xTimerHandle xDataTxActivityTimer = NULL;
 static void _dataRx_activity(xTimerHandle pxTimer)
 {
 	UNUSED(pxTimer);
-#if (BOARD != PIC32CXMTSH_DB)
+#if (BOARD != PIC32CXMTSH_DB) && (BOARD != PIC32CXMTC_DB)
 	c42364a_clear_icon(C42364A_ICON_AUDIO);
 #else
 	cl010_clear_icon(CL010_ICON_PHASE_3);  
@@ -113,7 +113,7 @@ static void _dataRx_activity(xTimerHandle pxTimer)
 static void _dataTx_activity(xTimerHandle pxTimer)
 {
 	UNUSED(pxTimer);
-#if (BOARD != PIC32CXMTSH_DB)
+#if (BOARD != PIC32CXMTSH_DB) && (BOARD != PIC32CXMTC_DB)
 	c42364a_clear_icon(C42364A_ICON_WLESS);
 #else
 	cl010_clear_icon(CL010_ICON_PHASE_2);  
@@ -158,7 +158,7 @@ static void task_modem(void *pvParameters)
 #ifdef EXAMPLE_LCD_SIGNALLING_ENABLE
 #if (BOARD != ATPL360AMB) && (BOARD != ATPL360MB) 
 		if (modem_txdata_ind()) {
-#if (BOARD != PIC32CXMTSH_DB)
+#if (BOARD != PIC32CXMTSH_DB) && (BOARD != PIC32CXMTC_DB)
 			c42364a_show_icon(C42364A_ICON_WLESS);
 #else
 			cl010_show_icon(CL010_ICON_PHASE_2);  
@@ -167,7 +167,7 @@ static void task_modem(void *pvParameters)
 		}
 
 		if (modem_rxdata_ind()) {
-#if (BOARD != PIC32CXMTSH_DB)
+#if (BOARD != PIC32CXMTSH_DB) && (BOARD != PIC32CXMTC_DB)
 			c42364a_show_icon(C42364A_ICON_AUDIO);
 #else
 			cl010_show_icon(CL010_ICON_PHASE_3);

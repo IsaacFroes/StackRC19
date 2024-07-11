@@ -103,7 +103,7 @@ bool hal_get_config_info(config_info_type_t cfg_type, uint16_t us_size, void *pv
 
 	/* Provide data parameters */
 	puc_data_src = (uint8_t *)ul_user_sign_buf + uc_position_offset;
-#if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB) || (BOARD == PL360G55CF_EK) || (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTG_EK)
+#if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB) || (BOARD == PL360G55CF_EK) || (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTG_EK) || (BOARD==PIC32CXMTC_DB)
 	/* Consider endianness for compatibility */
 	uint8_t uc_temp;
 	uc_temp = puc_data_src[0];
@@ -176,7 +176,7 @@ bool hal_set_config_info(config_info_type_t cfg_type, uint16_t us_size, void *pv
 	/* provide data parameters */
 	puc_dst = (uint8_t *)ul_user_sign_buf + uc_position_offset;
 	memcpy((uint8_t *)puc_dst, (uint8_t *)pv_data, us_size);
-#if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB) || (BOARD == PL360G55CF_EK) || (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTG_EK)
+#if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB) || (BOARD == PL360G55CF_EK) || (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTG_EK) || (BOARD==PIC32CXMTC_DB)
 	/* Consider endianness for compatibility */
 	uint8_t uc_temp;
 	uc_temp = puc_dst[0];

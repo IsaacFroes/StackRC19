@@ -158,7 +158,7 @@ static uint8_t uc_blink_rx;
 #if (BOARD != ATPL360AMB) && (BOARD != ATPL360MB)
 static uint8_t uc_blink_status;
 #endif
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD==PIC32CXMTC_DB)
 static uint8_t uc_toggle_status;
 #endif
 static void _show_node_state(void);
@@ -200,7 +200,7 @@ void TC_1MS_Handler(void)
 #if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB) || (BOARD == PL360G55CF_EK) || (BOARD == PIC32CXMTG_EK)
 			LED_Off(LED1);
 #endif
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD==PIC32CXMTC_DB)
 			cl010_clear_icon(CL010_ICON_PHASE_2);
 #endif
 		}
@@ -211,7 +211,7 @@ void TC_1MS_Handler(void)
 #if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB) || (BOARD == PL360G55CF_EK) || (BOARD == PIC32CXMTG_EK)
 			LED_Off(LED1);
 #endif
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD==PIC32CXMTC_DB)
 			cl010_clear_icon(CL010_ICON_PHASE_3);
 #endif
 		}
@@ -323,7 +323,7 @@ static void _prv_setup_hardware(void)
 	sprintf(puc_app, "PRIME Dual %d", PRIME_APP_VERSION);
 	c0216CiZ_set_cursor(C0216CiZ_LINE_DOWN, 0);
 	c0216CiZ_show((const char *)puc_app);
-#elif BOARD == PIC32CXMTSH_DB
+#elif BOARD == PIC32CXMTSH_DB || (BOARD==PIC32CXMTC_DB)
 	/* Initialize the CL010 LCD glass component. */
 	status = cl010_init();
 	if (status != STATUS_OK) {
@@ -385,12 +385,12 @@ static void _configure_dbg_console(void)
 static uint8_t _blink_symbol(uint8_t icon_com, uint8_t icon_seg, uint8_t status)
 {
 	if (!status) {
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 		cl010_show_icon(icon_com, icon_seg);
 #endif
 		return true;
 	} else {
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 		cl010_clear_icon(icon_com, icon_seg);
 #endif
 		return false;
@@ -414,7 +414,7 @@ static void _show_node_state(void)
 	case NODE_UNREGISTERED:
 #if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB)
 		c0216CiZ_show((const char *)"SN UNREGISTERED");
-#elif (BOARD == PIC32CXMTSH_DB)
+#elif (BOARD == PIC32CXMTSH_DB) || (BOARD==PIC32CXMTC_DB) 
 		cl010_show_numeric_string(CL010_LINE_UP, (const uint8_t *)"55000000");
 		cl010_show_icon(CL010_ICON_COL_2);
 		cl010_clear_icon(CL010_ICON_COMM_SIGNAL_LOW);
@@ -426,7 +426,7 @@ static void _show_node_state(void)
 	case NODE_REGISTERED:
 #if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB)
 		c0216CiZ_show((const char *)"SN REGISTERED   ");
-#elif (BOARD == PIC32CXMTSH_DB)
+#elif (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 		cl010_show_numeric_string(CL010_LINE_UP, (const uint8_t *)"55000001");
 		cl010_show_icon(CL010_ICON_COL_2);
 		cl010_show_icon(CL010_ICON_COMM_SIGNAL_LOW);
@@ -438,7 +438,7 @@ static void _show_node_state(void)
 	case NODE_CONNECTED_DLMSEMU:
 #if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB)
 		c0216CiZ_show((const char *)"CONNECTED 4.32  ");
-#elif (BOARD == PIC32CXMTSH_DB)
+#elif (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 		cl010_show_numeric_string(CL010_LINE_UP, (const uint8_t *)"55000432");
 		cl010_show_icon(CL010_ICON_COL_2);
 		cl010_show_icon(CL010_ICON_COMM_SIGNAL_LOW);
@@ -451,18 +451,18 @@ static void _show_node_state(void)
 #if (BOARD != ATPL360AMB) && (BOARD != ATPL360MB)
 	if (dlms_app_node_state() == NODE_UNREGISTERED) {
 		if (get_app_mode() == APP_EMU_MODE) {
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 			uc_blink_status = _blink_symbol(CL010_ICON_PHASE_1, uc_blink_status);
 #endif
 		}
 	} else {
 		if (dlms_app_node_state() == NODE_CONNECTED_APPEMU) {
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 			cl010_show_icon(CL010_ICON_SWITCH_OPEN);
 #endif
 		} else {
 
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 			cl010_clear_icon(CL010_ICON_SWITCH_OPEN);
 			cl010_show_icon(CL010_ICON_PHASE_1);
 #endif
@@ -479,8 +479,8 @@ static void _show_node_state(void)
  */
 static void _app_signalling(void)
 {
-#if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB) || (BOARD == PL360G55CF_EK) || (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTG_EK) || (BOARD == SAMG55_XPLAINED)
-#if (BOARD != PIC32CXMTSH_DB)
+#if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB) || (BOARD == PL360G55CF_EK) || (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTG_EK) || (BOARD == SAMG55_XPLAINED) || (BOARD == PIC32CXMTC_DB)
+#if (BOARD != PIC32CXMTSH_DB) || (BOARD != PIC32CXMTC_DB)
 #if (BOARD == SAM4CMP_DB || BOARD == SAM4CMS_DB)
 	LED_Toggle(LED4);
 #else
@@ -505,14 +505,14 @@ static void _init_display_info(uint32_t ul_prime_ptr)
 #if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB) || (BOARD == PL360G55CF_EK) || (BOARD == PIC32CXMTG_EK)
 		LED_On(LED1);
 #endif
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 		cl010_show_icon(CL010_ICON_PHASE_2);
 #endif
 #ifdef EXAMPLE_LCD_SIGNALLING_ENABLE
 #if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB)
 		c0216CiZ_set_cursor(C0216CiZ_LINE_UP, 0);
 		c0216CiZ_show((const char *)"STACK13 LOADED ");
-#elif (BOARD == PIC32CXMTSH_DB)
+#elif (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 		cl010_show_numeric_string(CL010_LINE_UP, (const uint8_t *)"55000000");
 		cl010_show_icon(CL010_ICON_COL_2);
 		cl010_show_numeric_string(CL010_LINE_DOWN, (const uint8_t *)"1357361");
@@ -523,14 +523,14 @@ static void _init_display_info(uint32_t ul_prime_ptr)
 #if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB) || (BOARD == PL360G55CF_EK) || (BOARD == PIC32CXMTG_EK)
 		LED_On(LED1);
 #endif
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 		cl010_show_icon(CL010_ICON_PHASE_2);
 #endif
 #ifdef EXAMPLE_LCD_SIGNALLING_ENABLE
 #if (BOARD == ATPL360AMB) || (BOARD == ATPL360MB)
 		c0216CiZ_set_cursor(C0216CiZ_LINE_UP, 0);
 		c0216CiZ_show((const char *)"STACK14 LOADED ");
-#elif (BOARD == PIC32CXMTSH_DB)
+#elif (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 		cl010_show_numeric_string(CL010_LINE_UP, (const uint8_t *)"55000000");
 		cl010_show_icon(CL010_ICON_COL_2);
 		cl010_show_numeric_string(CL010_LINE_DOWN, (const uint8_t *)"1457361");
@@ -583,7 +583,7 @@ static void _blink_plc_tx_activity_led(void)
 	uc_blink_tx = TXRX_SHOW_TIME;
 #endif
 #ifdef EXAMPLE_LCD_SIGNALLING_ENABLE
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD==PIC32CXMTC_DB)
 	cl010_show_icon(CL010_ICON_PHASE_2);
 #endif
 #endif
@@ -600,7 +600,7 @@ static void _blink_plc_rx_activity_led(void)
 	uc_blink_rx = TXRX_SHOW_TIME;
 #endif
 #ifdef EXAMPLE_LCD_SIGNALLING_ENABLE
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 	cl010_show_icon(CL010_ICON_PHASE_3);
 #endif
 #endif
@@ -756,7 +756,7 @@ int main(void)
 	/* Prepare the hardware */
 	_prv_setup_hardware();
 
-#if !defined( _PRIME_SIM_) && (BOARD != PL360G55CF_EK) && (BOARD != PIC32CXMTSH_DB) && (BOARD != PIC32CXMTG_EK)
+#if !defined( _PRIME_SIM_) && (BOARD != PL360G55CF_EK) && (BOARD != PIC32CXMTSH_DB) && (BOARD != PIC32CXMTG_EK) && (BOARD !=PIC32CXMTC_DB)
 	/* configure IO_port to enable/disable  APP EMU mode */
 	ioport_set_pin_dir(PIN_APPDLMSEMU_GPIO, IOPORT_DIR_INPUT);
 	ioport_set_pin_level(PIN_APPDLMSEMU_GPIO, IOPORT_PIN_LEVEL_HIGH);
