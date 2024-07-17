@@ -395,7 +395,7 @@ static void _pl360_enable(void)
 #if BOARD == ATPL360MB
 			c0216CiZ_set_cursor(C0216CiZ_LINE_UP, 0);
 			c0216CiZ_show((const char *)"ATPL360MB ERROR");
-#elif (BOARD == PIC32CXMTSH_DB)
+#elif (BOARD == PIC32CXMTSH_DB) || (BOARD==PIC32CXMTC_DB)
 			cl010_show_icon(CL010_ICON_PHASE_1);
 			cl010_show_icon(CL010_ICON_PHASE_2);
 			cl010_show_icon(CL010_ICON_PHASE_3);

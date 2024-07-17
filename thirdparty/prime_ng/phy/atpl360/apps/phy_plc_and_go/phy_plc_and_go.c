@@ -78,7 +78,7 @@ static uint32_t sul_count_ms = COUNT_MS_SWAP_LED;
 uint32_t sul_ind_count_ms = 0;
 static uint8_t suc_led_swap = 0;
 static bool sb_ind_led_swap = false;
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD==PIC32CXMTC_DB)
 #ifdef CONF_BOARD_LCD_EN
 static bool b_led_swap_on = false;
 #endif
@@ -211,7 +211,7 @@ static void _lcd_init(void)
 	c0216CiZ_show((const char *)"ATPL360MB PRIME");
 	c0216CiZ_set_cursor(C0216CiZ_LINE_DOWN, 0);
 	c0216CiZ_show((const char *)"PRIME Chat App");
-#elif BOARD == PIC32CXMTSH_DB
+#elif BOARD == PIC32CXMTSH_DB || (BOARD==PIC32CXMTC_DB)
 	/* Initialize the CL010 LCD glass component. */
 	status = cl010_init();
 	if (status != STATUS_OK) {
@@ -273,7 +273,7 @@ int main(void)
 		/* Blink led 0 */
 		if (suc_led_swap) {
 			suc_led_swap = 0;
-#if (BOARD != PIC32CXMTSH_DB)
+#if (BOARD != PIC32CXMTSH_DB) || (BOARD!=PIC32CXMTC_DB)
 	#if (BOARD == SAM4CMS_DB)
 			LED_Toggle(LED4);
 	#else
@@ -298,7 +298,7 @@ int main(void)
 #ifdef LED1_GPIO
 			LED_Off(LED1);
 #endif
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD==PIC32CXMTC_DB)
 #ifdef CONF_BOARD_LCD_EN
 			cl010_clear_icon(CL010_ICON_PHASE_2);  
 #endif

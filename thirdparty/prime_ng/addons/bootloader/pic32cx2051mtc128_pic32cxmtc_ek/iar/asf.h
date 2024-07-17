@@ -52,23 +52,9 @@
  * running the ASF driver selector tool. Any changes will be discarded.
  */
 
-// From module: ADC - Analog-to-digital Converter
-#include <adc.h>
-
-// From module: AES - Advanced Encryption Standard Module
-#include <aes.h>
-
-// From module: CL010-1158-132Y-01 Display LCD Glass
-#include <cl010.h>
-#include <cl010_font.h>
-#include <cl010_segmap.h>
-
 // From module: Common SAM/PIC32CX compiler driver
 #include <compiler.h>
 #include <status_codes.h>
-
-// From module: DWDT - Dual Watchdog Timer
-#include <dwdt.h>
 
 // From module: Delay routines
 #include <delay.h>
@@ -76,17 +62,8 @@
 // From module: EEFC - Enhanced Embedded Flash Controller
 #include <efc.h>
 
-// From module: FLEXCOM - Flexible Serial Communication Controller
-#include <flexcom.h>
-
 // From module: Flash - SAM Flash Service API
 #include <flash_efc.h>
-
-// From module: GPBR - General Purpose Backup Register
-#include <gpbr.h>
-
-// From module: GPIO - General purpose Input/Output
-#include <gpio.h>
 
 // From module: Generic board support
 #include <board.h>
@@ -97,53 +74,18 @@
 // From module: Interrupt management - SAM implementation
 #include <interrupt.h>
 
-// From module: PDC - Peripheral DMA Controller Example
-#include <pdc.h>
-
-// From module: PIC32CXMTSH_DB LED support enabled
+// From module: PIC32CXMTC_DB LED support enabled
 #include <led.h>
 
 // From module: PIO - Parallel Input/Output Controller - PIC32CX implementation
 #include <pio.h>
 
-// From module: PL360 PRIME private include
-#include <atpl360.h>
-#include <atpl360_IB_db.h>
-#include <atpl360_boot.h>
-#include <atpl360_comm.h>
-#include <atpl360_exception.h>
-#include <general_defs.h>
-
 // From module: PMC - Power Management Controller - PIC32CX implementation
 #include <pmc.h>
 #include <sleep.h>
 
-// From module: PRIME API include for user applications
-#include <prime_api.h>
-#include <prime_api_defs.h>
-
-// From module: PRIME Hardware Abstraction Layer include
-#include <hal.h>
-#include <hal_regions.h>
-
-// From module: PRIME MAC Layer include for PRIME user application
-#include <mac.h>
-#include <mac_defs.h>
-#include <mac_pib.h>
-
-// From module: PRIME NG DL 432
-#include <cl_432.h>
-#include <cl_432_api.h>
-#include <cl_432_defs.h>
-
 // From module: Part identification macros
 #include <parts.h>
-
-// From module: Physical Abstraction Layer (PAL) include - ATPL360 and PRIME MAC
-#include <pal.h>
-
-// From module: Proxy Radio Frequency (RF) Controller Interface - SAMG55/PIC32CX implementation
-#include <prf_if.h>
 
 // From module: RSTC - Reset Controller
 #include <rstc.h>
@@ -151,43 +93,14 @@
 // From module: SAM/PIC32CX FPU driver
 #include <fpu.h>
 
-// From module: SPI - Serial Peripheral Interface
-#include <spi.h>
+// From module: SFR - Special Function Registers
+#include <sfr.h>
 
 // From module: SUPC - Supply Controller
 #include <supc.h>
 
-// From module: Segment LCD Controller driver
-#include <slcdc.h>
-
-// From module: Sleep manager - SAM implementation
-#include <sam/sleepmgr.h>
-#include <sleepmgr.h>
-
-// From module: Standard serial I/O (stdio) - SAM implementation
-#include <stdio_serial.h>
-
 // From module: System Clock Control - PIC32CX implementation
 #include <sysclk.h>
-
-// From module: TC - Timer Counter
-#include <tc.h>
-
-// From module: TRNG - True Random Number Generator Register
-#include <trng.h>
-
-// From module: Timer of 1us used as timer reference for RF and PLC stacks
-#include <timer_1us.h>
-#include <timer_1us_hal.h>
-
-// From module: UART - Univ. Async Rec/Trans
-#include <uart.h>
-
-// From module: USART - Serial interface - PIC32CX implementation for devices with only USART
-#include <serial.h>
-
-// From module: USART - Univ. Syn Async Rec/Trans
-#include <usart.h>
 
 // From module: pio_handler support enabled
 #include <pio_handler.h>

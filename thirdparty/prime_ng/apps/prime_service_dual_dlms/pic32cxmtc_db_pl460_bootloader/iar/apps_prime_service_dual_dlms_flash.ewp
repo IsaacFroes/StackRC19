@@ -406,6 +406,7 @@
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\usart</state>
                     <state>$PROJ_DIR$\.</state>
                     <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_conf\pl460</state>
+                    <state>$PROJ_DIR$\..\..\..\..\pal\include</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -687,7 +688,7 @@
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\slcdc</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\dlms\server\profile_prime</state>
-                    <state>C:\Users\Isaac\OneDrive\Workspace\Edge Prime\Codes\Stack140401RC19)\thirdparty\prime_ng\pal\include</state>
+                    <state>$PROJ_DIR$\..\..\..\..\pal\include</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\services\rf\prf_if\at86rf215</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\aes</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360</state>

@@ -67,6 +67,9 @@
 #include <compiler.h>
 #include <status_codes.h>
 
+// From module: Coupling TX configuration for PL360 (PRIME)
+#include <coup_tx_config.h>
+
 // From module: DWDT - Dual Watchdog Timer
 #include <dwdt.h>
 
@@ -81,6 +84,20 @@
 
 // From module: Flash - SAM Flash Service API
 #include <flash_efc.h>
+
+// From module: FreeRTOS mini Real-Time Kernel
+#include <FreeRTOS.h>
+#include <FreeRTOS_CLI.h>
+#include <StackMacros.h>
+#include <croutine.h>
+#include <list.h>
+#include <mpu_wrappers.h>
+#include <portable.h>
+#include <projdefs.h>
+#include <queue.h>
+#include <semphr.h>
+#include <task.h>
+#include <timers.h>
 
 // From module: GPBR - General Purpose Backup Register
 #include <gpbr.h>
@@ -97,6 +114,14 @@
 // From module: Interrupt management - SAM implementation
 #include <interrupt.h>
 
+// From module: Multiprotocol PLC Host Driver
+#include <atpl360.h>
+#include <atpl360_IB_db.h>
+#include <atpl360_boot.h>
+#include <atpl360_comm.h>
+#include <atpl360_exception.h>
+#include <general_defs.h>
+
 // From module: PDC - Peripheral DMA Controller Example
 #include <pdc.h>
 
@@ -106,19 +131,11 @@
 // From module: PIO - Parallel Input/Output Controller - PIC32CX implementation
 #include <pio.h>
 
-// From module: PL360 PRIME private include
-#include <atpl360.h>
-#include <atpl360_IB_db.h>
-#include <atpl360_boot.h>
-#include <atpl360_comm.h>
-#include <atpl360_exception.h>
-#include <general_defs.h>
-
 // From module: PMC - Power Management Controller - PIC32CX implementation
 #include <pmc.h>
 #include <sleep.h>
 
-// From module: PRIME API include for user applications
+// From module: PRIME API include for user applications(library mode)
 #include <prime_api.h>
 #include <prime_api_defs.h>
 
@@ -126,7 +143,7 @@
 #include <hal.h>
 #include <hal_regions.h>
 
-// From module: PRIME MAC Layer include for PRIME user application
+// From module: PRIME MAC Layer include for PRIME binary file generation
 #include <mac.h>
 #include <mac_defs.h>
 #include <mac_pib.h>
@@ -141,9 +158,6 @@
 
 // From module: Physical Abstraction Layer (PAL) include - ATPL360 and PRIME MAC
 #include <pal.h>
-
-// From module: Proxy Radio Frequency (RF) Controller Interface - SAMG55/PIC32CX implementation
-#include <prf_if.h>
 
 // From module: RSTC - Reset Controller
 #include <rstc.h>

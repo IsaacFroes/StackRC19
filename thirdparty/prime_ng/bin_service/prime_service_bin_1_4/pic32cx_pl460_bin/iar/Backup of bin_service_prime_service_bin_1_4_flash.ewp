@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-    <fileVersion>4</fileVersion>
+    <fileVersion>3</fileVersion>
     <configuration>
         <name>Debug</name>
         <toolchain>
@@ -11,7 +11,7 @@
             <name>General</name>
             <archiveVersion>3</archiveVersion>
             <data>
-                <version>36</version>
+                <version>34</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>1</debug>
                 <option>
@@ -62,7 +62,7 @@
                 </option>
                 <option>
                     <name>RTDescription</name>
-                    <state>A compact configuration of the C/C++14 runtime library. No locale interface, C locale, no file descriptor support, no multibytes in printf and scanf, and no hex floats in strtod.</state>
+                    <state>Use the normal configuration of the C/C++ runtime library. No locale interface, C locale, no file descriptor support, no multibytes in printf and scanf, and no hex floats in strtod.</state>
                 </option>
                 <option>
                     <name>OGProductVersion</name>
@@ -70,7 +70,7 @@
                 </option>
                 <option>
                     <name>OGLastSavedByProductVersion</name>
-                    <state>9.50.2.71646</state>
+                    <state>9.20.4.46976</state>
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
@@ -98,7 +98,7 @@
                 </option>
                 <option>
                     <name>GBECoreSlave</name>
-                    <version>33</version>
+                    <version>31</version>
                     <state>39</state>
                 </option>
                 <option>
@@ -115,7 +115,7 @@
                 </option>
                 <option>
                     <name>CoreVariant</name>
-                    <version>33</version>
+                    <version>31</version>
                     <state>39</state>
                 </option>
                 <option>
@@ -138,7 +138,7 @@
                 </option>
                 <option>
                     <name>GFPUCoreSlave2</name>
-                    <version>33</version>
+                    <version>31</version>
                     <state>39</state>
                 </option>
                 <option>
@@ -203,32 +203,19 @@
                     <name>BuildFilesPath</name>
                     <state>Debug</state>
                 </option>
-                <option>
-                    <name>PointerAuthentication</name>
-                    <state>0</state>
-                </option>
-                <option>
-                    <name>FPU64</name>
-                    <state>1</state>
-                </option>
-                <option>
-                    <name>OG_32_64DeviceCoreSlave</name>
-                    <version>33</version>
-                    <state>39</state>
-                </option>
             </data>
         </settings>
         <settings>
             <name>ICCARM</name>
             <archiveVersion>2</archiveVersion>
             <data>
-                <version>38</version>
+                <version>37</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>1</debug>
                 <option>
                     <name>CCDefines</name>
                     <state>ARM_MATH_CM4=true</state>
-                    <state>__PIC32CX2051MTC128__</state>
+                    <state>__PIC32CX2051MTSH128__</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -499,21 +486,13 @@
                     <name>CCStackProtection</name>
                     <state>0</state>
                 </option>
-                <option>
-                    <name>CCPointerAutentiction</name>
-                    <state>0</state>
-                </option>
-                <option>
-                    <name>CCBranchTargetIdentification</name>
-                    <state>0</state>
-                </option>
             </data>
         </settings>
         <settings>
             <name>AARM</name>
             <archiveVersion>2</archiveVersion>
             <data>
-                <version>12</version>
+                <version>11</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>1</debug>
                 <option>
@@ -564,7 +543,7 @@
                 <option>
                     <name>ADefines</name>
                     <state>ARM_MATH_CM4=true</state>
-                    <state>__PIC32CX2051MTC128__</state>
+                    <state>__PIC32CX2051MTSH128__</state>
                 </option>
                 <option>
                     <name>AList</name>
@@ -708,10 +687,6 @@
                     <name>PreInclude</name>
                     <state></state>
                 </option>
-                <option>
-                    <name>A_32_64Device</name>
-                    <state>1</state>
-                </option>
             </data>
         </settings>
         <settings>
@@ -740,7 +715,7 @@
                 </option>
                 <option>
                     <name>OOCObjCopyEnable</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
             </data>
         </settings>
@@ -755,10 +730,18 @@
             </data>
         </settings>
         <settings>
+            <name>BUILDACTION</name>
+            <archiveVersion>1</archiveVersion>
+            <data>
+                <prebuild></prebuild>
+                <postbuild></postbuild>
+            </data>
+        </settings>
+        <settings>
             <name>ILINK</name>
             <archiveVersion>0</archiveVersion>
             <data>
-                <version>27</version>
+                <version>26</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>1</debug>
                 <option>
@@ -1118,14 +1101,6 @@
                     <name>IlinkWrapperFile</name>
                     <state></state>
                 </option>
-                <option>
-                    <name>IlinkProcessor</name>
-                    <state>1</state>
-                </option>
-                <option>
-                    <name>IlinkFpuProcessor</name>
-                    <state>1</state>
-                </option>
             </data>
         </settings>
         <settings>
@@ -1149,11 +1124,6 @@
                 </option>
             </data>
         </settings>
-        <settings>
-            <name>BUILDACTION</name>
-            <archiveVersion>2</archiveVersion>
-            <data />
-        </settings>
     </configuration>
     <configuration>
         <name>Release</name>
@@ -1165,7 +1135,7 @@
             <name>General</name>
             <archiveVersion>3</archiveVersion>
             <data>
-                <version>36</version>
+                <version>34</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>0</debug>
                 <option>
@@ -1224,7 +1194,7 @@
                 </option>
                 <option>
                     <name>OGLastSavedByProductVersion</name>
-                    <state>9.50.2.71646</state>
+                    <state>9.20.4.46976</state>
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
@@ -1252,7 +1222,7 @@
                 </option>
                 <option>
                     <name>GBECoreSlave</name>
-                    <version>33</version>
+                    <version>31</version>
                     <state>38</state>
                 </option>
                 <option>
@@ -1269,7 +1239,7 @@
                 </option>
                 <option>
                     <name>CoreVariant</name>
-                    <version>33</version>
+                    <version>31</version>
                     <state>39</state>
                 </option>
                 <option>
@@ -1292,7 +1262,7 @@
                 </option>
                 <option>
                     <name>GFPUCoreSlave2</name>
-                    <version>33</version>
+                    <version>31</version>
                     <state>39</state>
                 </option>
                 <option>
@@ -1357,26 +1327,13 @@
                     <name>BuildFilesPath</name>
                     <state>Release</state>
                 </option>
-                <option>
-                    <name>PointerAuthentication</name>
-                    <state>0</state>
-                </option>
-                <option>
-                    <name>FPU64</name>
-                    <state>1</state>
-                </option>
-                <option>
-                    <name>OG_32_64DeviceCoreSlave</name>
-                    <version>33</version>
-                    <state>39</state>
-                </option>
             </data>
         </settings>
         <settings>
             <name>ICCARM</name>
             <archiveVersion>2</archiveVersion>
             <data>
-                <version>38</version>
+                <version>37</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>0</debug>
                 <option>
@@ -1653,21 +1610,13 @@
                     <name>CCStackProtection</name>
                     <state>0</state>
                 </option>
-                <option>
-                    <name>CCPointerAutentiction</name>
-                    <state>0</state>
-                </option>
-                <option>
-                    <name>CCBranchTargetIdentification</name>
-                    <state>0</state>
-                </option>
             </data>
         </settings>
         <settings>
             <name>AARM</name>
             <archiveVersion>2</archiveVersion>
             <data>
-                <version>12</version>
+                <version>11</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>0</debug>
                 <option>
@@ -1862,10 +1811,6 @@
                     <name>PreInclude</name>
                     <state></state>
                 </option>
-                <option>
-                    <name>A_32_64Device</name>
-                    <state>1</state>
-                </option>
             </data>
         </settings>
         <settings>
@@ -1909,10 +1854,18 @@
             </data>
         </settings>
         <settings>
+            <name>BUILDACTION</name>
+            <archiveVersion>1</archiveVersion>
+            <data>
+                <prebuild></prebuild>
+                <postbuild></postbuild>
+            </data>
+        </settings>
+        <settings>
             <name>ILINK</name>
             <archiveVersion>0</archiveVersion>
             <data>
-                <version>27</version>
+                <version>26</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>0</debug>
                 <option>
@@ -2272,14 +2225,6 @@
                     <name>IlinkWrapperFile</name>
                     <state></state>
                 </option>
-                <option>
-                    <name>IlinkProcessor</name>
-                    <state>1</state>
-                </option>
-                <option>
-                    <name>IlinkFpuProcessor</name>
-                    <state>1</state>
-                </option>
             </data>
         </settings>
         <settings>
@@ -2302,11 +2247,6 @@
                     <state>###Unitialized###</state>
                 </option>
             </data>
-        </settings>
-        <settings>
-            <name>BUILDACTION</name>
-            <archiveVersion>2</archiveVersion>
-            <data />
         </settings>
     </configuration>
     <group>

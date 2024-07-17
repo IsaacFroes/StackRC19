@@ -477,7 +477,7 @@ static void app_console_handle_rx_msg(uint8_t *puc_data_buf, uint16_t us_data_le
 #ifdef LED1_GPIO
 	LED_On(LED1);
 #endif
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD==PIC32CXMTC_DB)
 #ifdef CONF_BOARD_LCD_EN
 	cl010_show_icon(CL010_ICON_PHASE_2);
 #endif
@@ -497,7 +497,7 @@ static void app_console_handle_rx_msg_discarded(void)
 #ifdef LED1_GPIO
 	LED_On(LED1);
 #endif
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB) || (BOARD==PIC32CXMTC_DB)
 #ifdef CONF_BOARD_LCD_EN
 	cl010_show_icon(CL010_ICON_PHASE_2);
 #endif

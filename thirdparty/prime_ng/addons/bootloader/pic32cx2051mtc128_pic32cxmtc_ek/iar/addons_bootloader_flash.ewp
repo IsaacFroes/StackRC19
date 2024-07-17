@@ -74,7 +74,7 @@
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state>PIC32CX2051MTSH128	Microchip PIC32CX2051MTSH128 Core 0</state>
+                    <state>PIC32CX2051MTC128	Microchip PIC32CX2051MTC128</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
@@ -120,7 +120,7 @@
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state>PIC32CX2051MTSH128	Microchip PIC32CX2051MTSH128 Core 0</state>
+                    <state>PIC32CX2051MTC128	Microchip PIC32CX2051MTC128</state>
                 </option>
                 <option>
                     <name>FPU2</name>
@@ -227,6 +227,7 @@
                 <debug>1</debug>
                 <option>
                     <name>CCDefines</name>
+                    <state>BOARD=PIC32CXMTC_DB</state>
                     <state>ARM_MATH_CM4=true</state>
                     <state>__PIC32CX2051MTC128__</state>
                 </option>
@@ -289,7 +290,7 @@
                 <option>
                     <name>CCAllowList</name>
                     <version>1</version>
-                    <state>11111110</state>
+                    <state>00000000</state>
                 </option>
                 <option>
                     <name>CCDebugInfo</name>
@@ -351,38 +352,26 @@
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\fpu</state>
-                    <state>$PROJ_DIR$\..\..</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\services\ioport</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_irq</state>
-                    <state>$PROJ_DIR$\..\..\..\..\mac</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_pll</state>
-                    <state>$PROJ_DIR$\..\..\..\..\pal\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\addons\sniffer_if\prime</state>
-                    <state>$PROJ_DIR$\..\..\..\..\mac\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\addons\sniffer_if</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\addons</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_conf\pl460</state>
-                    <state>$PROJ_DIR$\..\..\..\..\prime_api</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\preprocessor</state>
-                    <state>$PROJ_DIR$\..\..\..\..\mngp</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\utils</state>
-                    <state>$PROJ_DIR$\..\..\..\..\pal\mpal</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215</state>
-                    <state>$PROJ_DIR$\..\..\..\..\conv\sscs\null</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\boards</state>
                     <state>$PROJ_DIR$\..</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\PRIME</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_tx_rx</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\app_wrp\pal</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_bbc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\hal</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_params</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_fe</state>
-                    <state>$PROJ_DIR$\..\..\..\..\conv\sscs\iec_4_32</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\boards</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\source\templates</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\supc\pic32cx</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\boards\pic32cxmtc_db</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\preprocessor</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\utils</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\services\delay</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\efc</state>
+                    <state>$PROJ_DIR$\..\..</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\services\clock</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pmc\pic32cx</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pio\pic32cx</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\header_files</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_common</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\addons</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\sfr</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\services\flash_efc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\rstc</state>
                     <state>$PROJ_DIR$\.</state>
                 </option>
                 <option>
@@ -399,20 +388,20 @@
                 </option>
                 <option>
                     <name>CCOptLevel</name>
-                    <state>3</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CCOptStrategy</name>
                     <version>0</version>
-                    <state>1</state>
+                    <state>2</state>
                 </option>
                 <option>
                     <name>CCOptLevelSlave</name>
-                    <state>3</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CCPosIndRopi</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CCPosIndRwpi</name>
@@ -461,7 +450,7 @@
                 <option>
                     <name>CCOptStrategySlave</name>
                     <version>0</version>
-                    <state>1</state>
+                    <state>2</state>
                 </option>
                 <option>
                     <name>CCGuardCalls</name>
@@ -563,6 +552,7 @@
                 </option>
                 <option>
                     <name>ADefines</name>
+                    <state>BOARD=PIC32CXMTC_DB</state>
                     <state>ARM_MATH_CM4=true</state>
                     <state>__PIC32CX2051MTC128__</state>
                 </option>
@@ -658,38 +648,26 @@
                     <name>AUserIncludes</name>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\fpu</state>
-                    <state>$PROJ_DIR$\..\..</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\services\ioport</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_irq</state>
-                    <state>$PROJ_DIR$\..\..\..\..\mac</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_pll</state>
-                    <state>$PROJ_DIR$\..\..\..\..\pal\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\addons\sniffer_if\prime</state>
-                    <state>$PROJ_DIR$\..\..\..\..\mac\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\addons\sniffer_if</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\addons</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_conf\pl460</state>
-                    <state>$PROJ_DIR$\..\..\..\..\prime_api</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\preprocessor</state>
-                    <state>$PROJ_DIR$\..\..\..\..\mngp</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\utils</state>
-                    <state>$PROJ_DIR$\..\..\..\..\pal\mpal</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215</state>
-                    <state>$PROJ_DIR$\..\..\..\..\conv\sscs\null</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\boards</state>
                     <state>$PROJ_DIR$\..</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\PRIME</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_tx_rx</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\app_wrp\pal</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_bbc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\hal</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_params</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_fe</state>
-                    <state>$PROJ_DIR$\..\..\..\..\conv\sscs\iec_4_32</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\boards</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\source\templates</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\supc\pic32cx</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\boards\pic32cxmtc_db</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\preprocessor</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\utils</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\services\delay</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\efc</state>
+                    <state>$PROJ_DIR$\..\..</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\services\clock</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pmc\pic32cx</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pio\pic32cx</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\header_files</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_common</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\addons</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\sfr</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\services\flash_efc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\rstc</state>
                     <state>$PROJ_DIR$\.</state>
                 </option>
                 <option>
@@ -732,7 +710,7 @@
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state>bin_service_prime_service_bin_1_4_flash.bin</state>
+                    <state>addons_bootloader_flash.bin</state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -763,7 +741,7 @@
                 <debug>1</debug>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>bin_service_prime_service_bin_1_4_flash.out</state>
+                    <state>addons_bootloader_flash.out</state>
                 </option>
                 <option>
                     <name>IlinkLibIOConfig</name>
@@ -835,7 +813,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$\..\..\linker_scripts\iar\pic32cx_0_flash_bin.icf</state>
+                    <state>$PROJ_DIR$\..\..\linker_scripts\iar\pic32cx_0_flash.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -887,7 +865,7 @@
                 </option>
                 <option>
                     <name>IlinkOverrideProgramEntryLabel</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabelSelect</name>
@@ -895,7 +873,7 @@
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabel</name>
-                    <state>prime_stack_init</state>
+                    <state>__iar_program_start</state>
                 </option>
                 <option>
                     <name>DoFill</name>
@@ -1068,7 +1046,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>bin_service_prime_service_bin_1_4_flash_import_lib.o</state>
+                    <state>###Unitialized###</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
@@ -1228,7 +1206,7 @@
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state>PIC32CX2051MTSH128	Microchip PIC32CX2051MTSH128 Core 0</state>
+                    <state>PIC32CX2051MTC128	Microchip PIC32CX2051MTC128</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
@@ -1248,7 +1226,7 @@
                 </option>
                 <option>
                     <name>RTConfigPath2</name>
-                    <state>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</state>
+                    <state>$TOOLKIT_DIR$\INC\c\DLib_Config_Normal.h</state>
                 </option>
                 <option>
                     <name>GBECoreSlave</name>
@@ -1274,7 +1252,7 @@
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state>PIC32CX2051MTSH128	Microchip PIC32CX2051MTSH128 Core 0</state>
+                    <state>PIC32CX2051MTC128	Microchip PIC32CX2051MTC128</state>
                 </option>
                 <option>
                     <name>FPU2</name>
@@ -1334,7 +1312,7 @@
                 </option>
                 <option>
                     <name>DSPExtension</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>TrustZone</name>
@@ -1381,8 +1359,9 @@
                 <debug>0</debug>
                 <option>
                     <name>CCDefines</name>
+                    <state>BOARD=PIC32CXMTC_DB</state>
                     <state>ARM_MATH_CM4=true</state>
-                    <state>__PIC32CX2051MTSH128__</state>
+                    <state>__PIC32CX2051MTC128__</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -1443,7 +1422,7 @@
                 <option>
                     <name>CCAllowList</name>
                     <version>1</version>
-                    <state>11111110</state>
+                    <state>00000000</state>
                 </option>
                 <option>
                     <name>CCDebugInfo</name>
@@ -1505,38 +1484,26 @@
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\fpu</state>
-                    <state>$PROJ_DIR$\..\..</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\services\ioport</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_irq</state>
-                    <state>$PROJ_DIR$\..\..\..\..\mac</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_pll</state>
-                    <state>$PROJ_DIR$\..\..\..\..\pal\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\addons\sniffer_if\prime</state>
-                    <state>$PROJ_DIR$\..\..\..\..\mac\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\addons\sniffer_if</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\addons</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_conf\pl460</state>
-                    <state>$PROJ_DIR$\..\..\..\..\prime_api</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\preprocessor</state>
-                    <state>$PROJ_DIR$\..\..\..\..\mngp</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\utils</state>
-                    <state>$PROJ_DIR$\..\..\..\..\pal\mpal</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215</state>
-                    <state>$PROJ_DIR$\..\..\..\..\conv\sscs\null</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\boards</state>
                     <state>$PROJ_DIR$\..</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\PRIME</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_tx_rx</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\app_wrp\pal</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_bbc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\hal</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_params</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_fe</state>
-                    <state>$PROJ_DIR$\..\..\..\..\conv\sscs\iec_4_32</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\boards</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\source\templates</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\supc\pic32cx</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\boards\pic32cxmtc_db</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\preprocessor</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\utils</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\services\delay</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\efc</state>
+                    <state>$PROJ_DIR$\..\..</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\services\clock</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pmc\pic32cx</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pio\pic32cx</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\header_files</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_common</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\addons</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\sfr</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\services\flash_efc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\rstc</state>
                     <state>$PROJ_DIR$\.</state>
                 </option>
                 <option>
@@ -1553,20 +1520,20 @@
                 </option>
                 <option>
                     <name>CCOptLevel</name>
-                    <state>3</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CCOptStrategy</name>
                     <version>0</version>
-                    <state>1</state>
+                    <state>2</state>
                 </option>
                 <option>
                     <name>CCOptLevelSlave</name>
-                    <state>3</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CCPosIndRopi</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CCPosIndRwpi</name>
@@ -1717,8 +1684,9 @@
                 </option>
                 <option>
                     <name>ADefines</name>
+                    <state>BOARD=PIC32CXMTC_EK</state>
                     <state>ARM_MATH_CM4=true</state>
-                    <state>__PIC32CX2051MTSH128__</state>
+                    <state>__PIC32CX2051MTC128__</state>
                 </option>
                 <option>
                     <name>AList</name>
@@ -1812,38 +1780,26 @@
                     <name>AUserIncludes</name>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\fpu</state>
-                    <state>$PROJ_DIR$\..\..</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\services\ioport</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_irq</state>
-                    <state>$PROJ_DIR$\..\..\..\..\mac</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_pll</state>
-                    <state>$PROJ_DIR$\..\..\..\..\pal\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\addons\sniffer_if\prime</state>
-                    <state>$PROJ_DIR$\..\..\..\..\mac\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\addons\sniffer_if</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\addons</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_conf\pl460</state>
-                    <state>$PROJ_DIR$\..\..\..\..\prime_api</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\preprocessor</state>
-                    <state>$PROJ_DIR$\..\..\..\..\mngp</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\utils</state>
-                    <state>$PROJ_DIR$\..\..\..\..\pal\mpal</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215</state>
-                    <state>$PROJ_DIR$\..\..\..\..\conv\sscs\null</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\boards</state>
                     <state>$PROJ_DIR$\..</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\PRIME</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_tx_rx</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\app_wrp\pal</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_bbc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\hal</state>
-                    <state>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_params</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_fe</state>
-                    <state>$PROJ_DIR$\..\..\..\..\conv\sscs\iec_4_32</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\boards</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\source\templates</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\supc\pic32cx</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\boards\pic32cxmtc_ek</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\preprocessor</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\utils</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\services\delay</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\efc</state>
+                    <state>$PROJ_DIR$\..\..</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\services\clock</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pmc\pic32cx</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pio\pic32cx</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\header_files</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_common</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\addons</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\sfr</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\services\flash_efc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\rstc</state>
                     <state>$PROJ_DIR$\.</state>
                 </option>
                 <option>
@@ -1886,7 +1842,7 @@
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state>bin_service_prime_service_bin_1_4_flash.bin</state>
+                    <state>addons_bootloader_flash.bin</state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -1917,7 +1873,7 @@
                 <debug>0</debug>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>bin_service_prime_service_bin_1_4_flash.out</state>
+                    <state>addons_bootloader_flash.out</state>
                 </option>
                 <option>
                     <name>IlinkLibIOConfig</name>
@@ -1989,7 +1945,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$\..\..\linker_scripts\iar\pic32cx_0_flash_bin.icf</state>
+                    <state>$PROJ_DIR$\..\..\linker_scripts\iar\pic32cx_0_flash.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -2041,7 +1997,7 @@
                 </option>
                 <option>
                     <name>IlinkOverrideProgramEntryLabel</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabelSelect</name>
@@ -2049,7 +2005,7 @@
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabel</name>
-                    <state>prime_stack_init</state>
+                    <state>__iar_program_start</state>
                 </option>
                 <option>
                     <name>DoFill</name>
@@ -2222,7 +2178,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>bin_service_prime_service_bin_1_4_flash_import_lib.o</state>
+                    <state>###Unitialized###</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
@@ -2312,210 +2268,72 @@
     <group>
         <name>common</name>
         <group>
-            <name>components</name>
+            <name>boards</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\..\..\..\common\boards\board.h</name>
+            </file>
+        </group>
+        <group>
+            <name>services</name>
             <group>
-                <name>plc</name>
+                <name>clock</name>
                 <group>
-                    <name>atpl360</name>
-                    <group>
-                        <name>addons</name>
-                        <group>
-                            <name>sniffer_if</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\addons\sniffer_if\sniffer_if.c</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\addons\sniffer_if\sniffer_if.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\addons\sniffer_if\sniffer_if_prime.c</name>
-                            </file>
-                        </group>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\addons\addon_api.h</name>
-                        </file>
-                    </group>
-                    <group>
-                        <name>PRIME</name>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\PRIME\atpl360_comm.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\PRIME\atpl360_comm.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\PRIME\atpl360_IB_db.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\PRIME\atpl360_IB_db.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\PRIME\general_defs.h</name>
-                        </file>
-                    </group>
+                    <name>pic32cx</name>
                     <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\atpl360.c</name>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\services\clock\pic32cx\genclk.h</name>
                     </file>
                     <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\atpl360.h</name>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\services\clock\pic32cx\osc.h</name>
                     </file>
                     <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\atpl360_boot.c</name>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\services\clock\pic32cx\pll.h</name>
                     </file>
                     <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\atpl360_boot.h</name>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\services\clock\pic32cx\sysclk.c</name>
                     </file>
                     <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\atpl360_exception.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\atpl360_hal_spi.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\atpl360_hal_spi.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\atpl360_IB.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\atpl360_IB.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\plc\atpl360\atpl360_IB_db_api.h</name>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\services\clock\pic32cx\sysclk.h</name>
                     </file>
                 </group>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\common\services\clock\genclk.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\common\services\clock\osc.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\common\services\clock\pll.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\common\services\clock\sysclk.h</name>
+                </file>
             </group>
             <group>
-                <name>rf</name>
+                <name>delay</name>
                 <group>
-                    <name>at86rf215</name>
-                    <group>
-                        <name>addons</name>
-                        <group>
-                            <name>sniffer_if</name>
-                            <group>
-                                <name>prime</name>
-                                <file>
-                                    <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\addons\sniffer_if\prime\rf215_sniffer_if.h</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\addons\sniffer_if\prime\rf215_sniffer_if_prime.c</name>
-                                </file>
-                            </group>
-                            <file>
-                                <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\addons\sniffer_if\rf215_sniffer_if.c</name>
-                            </file>
-                        </group>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\addons\rf215_addon.h</name>
-                        </file>
-                    </group>
-                    <group>
-                        <name>rf215_bbc</name>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_bbc\rf215_bbc.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_bbc\rf215_bbc.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_bbc\rf215_bbc_defs.h</name>
-                        </file>
-                    </group>
-                    <group>
-                        <name>rf215_common</name>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_common\rf215_conf_check.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_common\rf215_phy_defs.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_common\rf215_reg.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_common\rf215_spi.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_common\rf215_spi.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_common\rf215_trx_ctl.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_common\rf215_trx_ctl.h</name>
-                        </file>
-                    </group>
-                    <group>
-                        <name>rf215_fe</name>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_fe\rf215_fe.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_fe\rf215_fe.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_fe\rf215_fe_defs.h</name>
-                        </file>
-                    </group>
-                    <group>
-                        <name>rf215_irq</name>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_irq\rf215_irq.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_irq\rf215_irq.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_irq\rf215_irq_defs.h</name>
-                        </file>
-                    </group>
-                    <group>
-                        <name>rf215_pll</name>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_pll\rf215_pll.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_pll\rf215_pll.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_pll\rf215_pll_defs.h</name>
-                        </file>
-                    </group>
-                    <group>
-                        <name>rf215_tx_rx</name>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_tx_rx\rf215_rx.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_tx_rx\rf215_tx.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_tx_rx\rf215_tx_rx.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\rf215_tx_rx\rf215_tx_rx_defs.h</name>
-                        </file>
-                    </group>
+                    <name>sam</name>
                     <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\at86rf.h</name>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\services\delay\sam\cycle_counter.c</name>
                     </file>
                     <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\at86rf215.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\at86rf_defs.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\at86rf_version.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\ieee_15_4_sun_fsk.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\components\rf\at86rf215\ieee_15_4_sun_ofdm.h</name>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\services\delay\sam\cycle_counter.h</name>
                     </file>
                 </group>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\common\services\delay\delay.h</name>
+                </file>
+            </group>
+            <group>
+                <name>ioport</name>
+                <group>
+                    <name>pic32cx</name>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\common\services\ioport\pic32cx\ioport_pio.h</name>
+                    </file>
+                </group>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\common\services\ioport\ioport.h</name>
+                </file>
             </group>
         </group>
         <group>
@@ -2529,15 +2347,6 @@
                     <name>$PROJ_DIR$\..\..\..\..\..\..\common\utils\interrupt\interrupt_sam_nvic.h</name>
                 </file>
             </group>
-            <group>
-                <name>stdio</name>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\..\..\common\utils\stdio\read.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\..\..\common\utils\stdio\write.c</name>
-                </file>
-            </group>
             <file>
                 <name>$PROJ_DIR$\..\..\..\..\..\..\common\utils\interrupt.h</name>
             </file>
@@ -2548,6 +2357,111 @@
     </group>
     <group>
         <name>sam</name>
+        <group>
+            <name>boards</name>
+            <group>
+                <name>pic32cxmtc_db</name>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\sam\boards\pic32cxmtc_db\init.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\sam\boards\pic32cxmtc_db\led.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\sam\boards\pic32cxmtc_db\pic32cxmtc_db.h</name>
+                </file>
+            </group>
+        </group>
+        <group>
+            <name>drivers</name>
+            <group>
+                <name>efc</name>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\efc\efc.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\efc\efc.h</name>
+                </file>
+            </group>
+            <group>
+                <name>pio</name>
+                <group>
+                    <name>pic32cx</name>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pio\pic32cx\pio.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pio\pic32cx\pio.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pio\pic32cx\pio_handler.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pio\pic32cx\pio_handler.h</name>
+                    </file>
+                </group>
+            </group>
+            <group>
+                <name>pmc</name>
+                <group>
+                    <name>pic32cx</name>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pmc\pic32cx\pmc.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pmc\pic32cx\pmc.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pmc\pic32cx\sleep.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\pmc\pic32cx\sleep.h</name>
+                    </file>
+                </group>
+            </group>
+            <group>
+                <name>rstc</name>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\rstc\rstc.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\rstc\rstc.h</name>
+                </file>
+            </group>
+            <group>
+                <name>sfr</name>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\sfr\sfr.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\sfr\sfr.h</name>
+                </file>
+            </group>
+            <group>
+                <name>supc</name>
+                <group>
+                    <name>pic32cx</name>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\supc\pic32cx\supc.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\..\..\sam\drivers\supc\pic32cx\supc.h</name>
+                    </file>
+                </group>
+            </group>
+        </group>
+        <group>
+            <name>services</name>
+            <group>
+                <name>flash_efc</name>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\sam\services\flash_efc\flash_efc.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\sam\services\flash_efc\flash_efc.h</name>
+                </file>
+            </group>
+        </group>
         <group>
             <name>utils</name>
             <group>
@@ -2593,9 +2507,6 @@
                             </file>
                             <file>
                                 <name>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include\component\icm.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include\component\ipc.h</name>
                             </file>
                             <file>
                                 <name>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include\component\matrix.h</name>
@@ -2733,12 +2644,6 @@
                                 <name>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include\instance\icm.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include\instance\ipc0.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include\instance\ipc1.h</name>
-                            </file>
-                            <file>
                                 <name>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include\instance\matrix0.h</name>
                             </file>
                             <file>
@@ -2755,9 +2660,6 @@
                             </file>
                             <file>
                                 <name>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include\instance\mem2mem0.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include\instance\mem2mem1.h</name>
                             </file>
                             <file>
                                 <name>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include\instance\pio.h</name>
@@ -2989,6 +2891,21 @@
                             <name>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\include\system_pic32cxmt.h</name>
                         </file>
                     </group>
+                    <group>
+                        <name>source</name>
+                        <group>
+                            <name>templates</name>
+                            <group>
+                                <name>iar</name>
+                                <file>
+                                    <name>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\source\templates\iar\startup_pic32cxmt.c</name>
+                                </file>
+                            </group>
+                            <file>
+                                <name>$PROJ_DIR$\..\..\..\..\..\..\sam\utils\cmsis\pic32cx\source\templates\system_pic32cxmt.c</name>
+                            </file>
+                        </group>
+                    </group>
                 </group>
             </group>
             <group>
@@ -3031,11 +2948,11 @@
         <group>
             <name>prime_ng</name>
             <group>
-                <name>bin_service</name>
+                <name>addons</name>
                 <group>
-                    <name>prime_service_bin_1_4</name>
+                    <name>bootloader</name>
                     <group>
-                        <name>pic32cx_pl460_bin</name>
+                        <name>pic32cx2051mtc128_pic32cxmtc_db</name>
                         <group>
                             <name>iar</name>
                             <file>
@@ -3043,226 +2960,25 @@
                             </file>
                         </group>
                         <file>
-                            <name>$PROJ_DIR$\..\conf_at86rf.h</name>
+                            <name>$PROJ_DIR$\..\conf_board.h</name>
                         </file>
                         <file>
-                            <name>$PROJ_DIR$\..\conf_atpl360.h</name>
+                            <name>$PROJ_DIR$\..\conf_boot_regions.h</name>
                         </file>
                         <file>
                             <name>$PROJ_DIR$\..\conf_clock.h</name>
                         </file>
                         <file>
-                            <name>$PROJ_DIR$\..\conf_hal.h</name>
+                            <name>$PROJ_DIR$\..\conf_sleepmgr.h</name>
                         </file>
                         <file>
-                            <name>$PROJ_DIR$\..\conf_mac.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\conf_mngp.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\conf_pal.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\conf_prime_stack.h</name>
+                            <name>$PROJ_DIR$\..\conf_version.h</name>
                         </file>
                     </group>
-                </group>
-            </group>
-            <group>
-                <name>conv</name>
-                <group>
-                    <name>sscs</name>
-                    <group>
-                        <name>iec_4_32</name>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\conv\sscs\iec_4_32\cl_432.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\conv\sscs\iec_4_32\cl_432_defs.h</name>
-                        </file>
-                    </group>
-                    <group>
-                        <name>null</name>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\conv\sscs\null\cl_null.h</name>
-                        </file>
-                    </group>
-                </group>
-            </group>
-            <group>
-                <name>hal</name>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\hal\conf_prf_if.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\hal\conf_timer_1us.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\hal\hal.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\hal\hal_private.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\hal\hal_regions.h</name>
-                </file>
-            </group>
-            <group>
-                <name>libs</name>
-                <group>
-                    <name>iar</name>
                     <file>
-                        <name>$PROJ_DIR$\..\..\..\..\libs\iar\libsamM4-prime14-sn-iar.a</name>
+                        <name>$PROJ_DIR$\..\..\bootloader.c</name>
                     </file>
                 </group>
-            </group>
-            <group>
-                <name>mac</name>
-                <group>
-                    <name>include</name>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\mac\include\mac.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\mac\include\mac_defs.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\mac\include\mac_pib.h</name>
-                    </file>
-                </group>
-            </group>
-            <group>
-                <name>mngp</name>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\mngp\mngp.h</name>
-                </file>
-            </group>
-            <group>
-                <name>pal</name>
-                <group>
-                    <name>atpl360_prime</name>
-                    <group>
-                        <name>source</name>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\pal\atpl360_prime\source\pal.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\pal\atpl360_prime\source\pal_rm.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\pal\atpl360_prime\source\pal_rm.h</name>
-                        </file>
-                    </group>
-                </group>
-                <group>
-                    <name>include</name>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\pal\include\pal.h</name>
-                    </file>
-                </group>
-                <group>
-                    <name>mpal</name>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\pal\mpal\mpal.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\..\..\..\pal\mpal\mpal.h</name>
-                    </file>
-                </group>
-                <group>
-                    <name>rf215_prime</name>
-                    <group>
-                        <name>source</name>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\pal\rf215_prime\source\pal_rf.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\pal\rf215_prime\source\pal_rf_rm.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\pal\rf215_prime\source\pal_rf_rm.h</name>
-                        </file>
-                    </group>
-                </group>
-            </group>
-            <group>
-                <name>phy</name>
-                <group>
-                    <name>atpl360</name>
-                    <group>
-                        <name>coup_tx_config</name>
-                        <group>
-                            <name>app_wrp</name>
-                            <group>
-                                <name>pal</name>
-                                <file>
-                                    <name>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\app_wrp\pal\coup_app_wrp.h</name>
-                                </file>
-                            </group>
-                        </group>
-                        <group>
-                            <name>coup_conf</name>
-                            <group>
-                                <name>pl460</name>
-                                <file>
-                                    <name>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_conf\pl460\coup_conf.h</name>
-                                </file>
-                            </group>
-                        </group>
-                        <group>
-                            <name>coup_params</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_params\pl460_1_5b_2chn.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_params\pl460_1_5b_chn_fcc.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_params\pl460_plcoup007_chn_1.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_params\pl460_sb_2chn.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_params\pl460_sb_chn_1.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_params\pl460_sb_chn_fcc.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_params\plcoup007_chn_1.h</name>
-                            </file>
-                        </group>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_tx_config.c</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\..\..\..\phy\atpl360\coup_tx_config\coup_tx_config.h</name>
-                        </file>
-                    </group>
-                </group>
-            </group>
-            <group>
-                <name>prime_api</name>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\prime_api\prime_api.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\prime_api\prime_api.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\prime_api\prime_api_as.S</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\prime_api\prime_api_defs.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\prime_api\prime_hal_wrapper.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\prime_api\prime_hal_wrapper.h</name>
-                </file>
             </group>
         </group>
     </group>

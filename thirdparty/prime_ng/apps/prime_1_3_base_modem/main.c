@@ -385,7 +385,7 @@ static void _prv_setup_hardware(void)
 	sprintf(puc_app, "PRIME Modem %d", PRIME_APP_VERSION);
 	c0216CiZ_set_cursor(C0216CiZ_LINE_DOWN, 0);
 	c0216CiZ_show((const char *)puc_app);
-#elif BOARD == PIC32CXMTSH_DB
+#elif (BOARD == PIC32CXMTSH_DB) || (BOARD == PIC32CXMTC_DB)
 	/* Initialize the CL010 LCD glass component. */
 	status = cl010_init();
 	if (status != STATUS_OK) {
@@ -447,12 +447,12 @@ static void _configure_dbg_console(void)
 static uint8_t _blink_symbol(uint8_t icon_com, uint8_t icon_seg, uint8_t status)
 {
 	if (!status) {
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB)  || (BOARD == PIC32CXMTC_DB)
 		cl010_show_icon(icon_com, icon_seg);
 #endif
 		return true;
 	} else {
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB)  || (BOARD == PIC32CXMTC_DB)
 		cl010_clear_icon(icon_com, icon_seg);
 #endif
 		return false;
@@ -474,7 +474,7 @@ static void _app_signalling(xTimerHandle pxTimer)
 	LED_Toggle(LED0);
 #endif
 #ifdef EXAMPLE_LCD_SIGNALLING_ENABLE
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB)  || (BOARD == PIC32CXMTC_DB)
 	uc_blink_status = _blink_symbol(CL010_ICON_PHASE_1, uc_blink_status);
 #endif
 #endif
@@ -491,7 +491,7 @@ static void _PLC_activity(xTimerHandle pxTimer)
 #if (BOARD == PL360BN) || (BOARD == ATPL360AMB) || (BOARD == ATPL360MB) || (BOARD == PL360G55CF_EK) || (BOARD == PIC32CXMTG_EK)
 	LED_Off(LED1);
 #endif
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB)  || (BOARD == PIC32CXMTC_DB)
 	cl010_clear_icon(CL010_ICON_PHASE_1);
 #endif
 }
@@ -507,7 +507,7 @@ static void _PLC_activity(xTimerHandle pxTimer)
 static void _Data_activity(xTimerHandle pxTimer)
 {
 	UNUSED(pxTimer);
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB)  || (BOARD == PIC32CXMTC_DB)
 	cl010_clear_icon(CL010_ICON_PHASE_2);
 	cl010_clear_icon(CL010_ICON_PHASE_3);
 #endif
@@ -527,7 +527,7 @@ static void _blink_plc_tx_activity_led(void)
 	LED_On(LED1);
 #endif
 #ifdef EXAMPLE_LCD_SIGNALLING_ENABLE
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB)  || (BOARD == PIC32CXMTC_DB)
 	xTimerStart(xDataActivityTimer, DATA_ACTIVITY_BLOCK_TIME);
 	cl010_show_icon(CL010_ICON_PHASE_2);
 #endif
@@ -547,7 +547,7 @@ static void _blink_plc_rx_activity_led(void)
 #ifdef EXAMPLE_LCD_SIGNALLING_ENABLE
 #if (BOARD != ATPL360AMB) && (BOARD != ATPL360MB)
 	xTimerStart(xDataActivityTimer, DATA_ACTIVITY_BLOCK_TIME);
-#if (BOARD == PIC32CXMTSH_DB)
+#if (BOARD == PIC32CXMTSH_DB)  || (BOARD == PIC32CXMTC_DB)
 	cl010_show_icon(CL010_ICON_PHASE_3);
 #endif
 #endif

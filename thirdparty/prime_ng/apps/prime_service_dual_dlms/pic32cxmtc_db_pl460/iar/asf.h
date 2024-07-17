@@ -58,11 +58,6 @@
 // From module: AES - Advanced Encryption Standard Module
 #include <aes.h>
 
-// From module: CL010-1158-132Y-01 Display LCD Glass
-#include <cl010.h>
-#include <cl010_font.h>
-#include <cl010_segmap.h>
-
 // From module: Common SAM/PIC32CX compiler driver
 #include <compiler.h>
 #include <status_codes.h>
@@ -100,16 +95,13 @@
 // From module: PDC - Peripheral DMA Controller Example
 #include <pdc.h>
 
-// From module: PIC32CXMTSH_DB LED support enabled
+// From module: PIC32CXMTG_EK LED support enabled
 #include <led.h>
 
 // From module: PIO - Parallel Input/Output Controller - PIC32CX implementation
 #include <pio.h>
 
 // From module: PL360 PRIME private include
-#include <atpl360.h>
-#include <atpl360_IB_db.h>
-#include <atpl360_boot.h>
 #include <atpl360_comm.h>
 #include <atpl360_exception.h>
 #include <general_defs.h>
@@ -127,20 +119,14 @@
 #include <hal_regions.h>
 
 // From module: PRIME MAC Layer include for PRIME user application
-#include <mac.h>
 #include <mac_defs.h>
 #include <mac_pib.h>
 
-// From module: PRIME NG DL 432
-#include <cl_432.h>
-#include <cl_432_api.h>
+// From module: PRIME NG DL 432 for PRIME user application
 #include <cl_432_defs.h>
 
 // From module: Part identification macros
 #include <parts.h>
-
-// From module: Physical Abstraction Layer (PAL) include - ATPL360 and PRIME MAC
-#include <pal.h>
 
 // From module: Proxy Radio Frequency (RF) Controller Interface - SAMG55/PIC32CX implementation
 #include <prf_if.h>
@@ -151,14 +137,14 @@
 // From module: SAM/PIC32CX FPU driver
 #include <fpu.h>
 
+// From module: SFR - Special Function Registers
+#include <sfr.h>
+
 // From module: SPI - Serial Peripheral Interface
 #include <spi.h>
 
 // From module: SUPC - Supply Controller
 #include <supc.h>
-
-// From module: Segment LCD Controller driver
-#include <slcdc.h>
 
 // From module: Sleep manager - SAM implementation
 #include <sam/sleepmgr.h>
